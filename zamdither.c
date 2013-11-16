@@ -1,4 +1,4 @@
-/* zamdither.c  ZamClip mono soft clipper
+/* zamdither.c  ZamDither LV2 dither plugin
  * Copyright (C) 2013  Damien Zammit
  *
  * This program is free software; you can redistribute it and/or

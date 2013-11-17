@@ -848,7 +848,7 @@ run(LV2_Handle instance, uint32_t n_samples)
 			double b_aerr1 =  b_in1q-b_in1;// Q Err
 			double b_aerr2 =  b_in2q-b_in2;
 
-			if (zamdither->fvarg40 == 0) {
+			if (zamdither->fvarg40 == 0.0) {
 				// aerr filter
 				zamdither->b_lo1 = zamdither->b_lo1 + ((-zamdither->b_lo1 + b_aerr1) * zamdither->fvarg38);
 				zamdither->b_lo2 = zamdither->b_lo2 + ((-zamdither->b_lo2 + b_aerr2) * zamdither->fvarg38);
@@ -863,7 +863,7 @@ run(LV2_Handle instance, uint32_t n_samples)
 				b_aerr2 = b_aerr2 + ((zamdither->b_lo2*b_log) + (b_hi2o*b_hig));
 			} else { // advanced aerr gaussian plateau EQ
 
-				if (zamdither->fvarg40 == 1) {
+				if (zamdither->fvarg40 >= 0.99) {
 					// aerr filter
 					zamdither->b_lo1 = zamdither->b_lo1 + ((-zamdither->b_lo1 + b_aerr1) * zamdither->fvarg38);
 					zamdither->b_lo2 = zamdither->b_lo2 + ((-zamdither->b_lo2 + b_aerr2) * zamdither->fvarg38);

@@ -4,6 +4,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix pg: <http://lv2plug.in/ns/ext/port-groups#>.
+@prefix epp: <http://lv2plug.in/ns/ext/port-props#>.
 @prefix ue: <http://lv2plug.in/ns/extensions/units#>.
 
 <http://zamaudio.com/lv2/zamdither>
@@ -70,8 +71,8 @@ lv2:port [
 	lv2:index 5;
 	lv2:symbol "resolution";
 	lv2:name "Resolution";
-	lv2:minimum 0.160 ;
-	lv2:maximum 0.320 ;
+	lv2:minimum 0.161 ;
+	lv2:maximum 0.2415 ;
 	lv2:default 0.161 ;
         lv2:portProperty epp:hasStrictBounds ;
         lv2:portProperty lv2:integer ;

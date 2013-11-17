@@ -4,7 +4,7 @@ zamdither
 ZamDither - LV2 dither plugin
 
 This is a dither plugin based on 'Millenium Quantize and Dither II'.
-'Rounded + Optimal' preset has dither-noise from -100dB at 20k to -176dB at 1.5k.
+'Gaussian Optimal' preset has dither-noise from -100dB at 20k to -176dB at 1.5k.
 
 Feel free to leave comments on my blog as all feedback is appreciated.
 
